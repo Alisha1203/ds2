@@ -1,6 +1,8 @@
-text = input("Enter a string: ")
+text = input("Enter string: ")
 
-if text == text[::-1]:
-    print("Palindrome")
+rev = "".join(reversed(text))
+
+if text == rev:
+    print("Palindrome string")
 else:
-    print("Not Palindrome")
+    print("Not a palindrome")
